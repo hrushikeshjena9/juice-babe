@@ -1,0 +1,55 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  font-family: "Cormorant", serif;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* hero images  */
+.img-1 {
+  transform: rotate(18.62deg);
+}
+.img-2 {
+  transform: rotate(-110.37deg);
+}
+.img-3 {
+  transform: rotate(-26.9deg);
+}
+.img-4 {
+  transform: rotate(20.17deg);
+}
+.img-5 {
+  transform: rotate(321.15deg);
+}
+
+
+.border-set {
+  border: 2px blueviolet solid;
+  height: 200px;
+  width: 100%;
+}
+.footer-bg {
+  background: url("/assets/footerbg.png") no-repeat center center;
+  background-size: cover;
+}
+.container-footer{
+  padding-top: 300px;
+}
+.footer-input{
+  width: 50%;
+}
+.Sea-moss{
+  margin-left: -148px;
+}
+.sec-section{
+  background: url("/assets/Sec-section-img.png") no-repeat center center;
+  background-size: cover;
+  margin-top: -230px;
+}
+.bg-map{
+  background: url("/assets/bg-map.png") no-repeat center center;
+  background-size: cover;
+  
+}
