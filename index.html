@@ -16,15 +16,16 @@
 </head>
 
 <body>
-  <!-- Header Section -->
-  <header class="bg-[#F7EEDE] text-black text-center p-2">
+  <header class="bg-[#F7EEDE] text-black text-center p-4">
     <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center">
       <!-- Logo Section -->
-      <img src="/assets/logo.png" alt="Juice Babe Logo" class="h-30 w-30 mb-4 sm:mb-0" />
-
+      <div class="flex justify-center sm:justify-start w-full sm:w-auto mb-4 sm:mb-0">
+        <img src="/assets/logo.png" alt="Juice Babe Logo" class="h-12 w-12 sm:h-20 sm:w-20" />
+      </div>
+  
       <!-- Navigation Menu -->
-      <div class="flex flex-col sm:flex-row items-center sm:space-x-8 space-y-4 sm:space-y-0">
-        <ul class="flex flex-col sm:flex-row space-x-0 sm:space-x-8 font-bold text-xl sm:justify-around">
+      <div class="flex flex-col sm:flex-row sm:space-x-8 space-y-4 sm:space-y-0 w-full sm:w-auto">
+        <ul class="flex flex-col sm:flex-row justify-center sm:justify-start space-x-0 sm:space-x-8 font-bold text-xl">
           <li><a href="#" class="hover:text-[#895BD7]">Home</a></li>
           <li><a href="#" class="hover:text-[#895BD7]">About</a></li>
           <li><a href="#" class="hover:text-[#895BD7]">Pick Up Order</a></li>
@@ -33,23 +34,26 @@
           <li><a href="#" class="hover:text-[#895BD7]">Contact</a></li>
         </ul>
       </div>
-
+  
       <!-- Search, User Icon, and Cart Section -->
-      <div class="flex flex-col sm:flex-row items-center sm:space-x-8 space-y-4 sm:space-y-0">
-        <div class="relative w-full sm:max-w-xs">
+      <div class="flex flex-col sm:flex-row items-center sm:space-x-8 space-y-4 sm:space-y-0 w-full sm:w-auto justify-center sm:justify-end">
+        <!-- Search Input -->
+        <div class="relative w-full sm:max-w-xs mb-4 sm:mb-0">
           <img src="https://img.icons8.com/ios-filled/20/000000/search.png" alt="Search Icon"
             class="absolute left-3 top-1/2 transform -translate-y-1/2" />
           <input type="search" placeholder="Search..."
             class="border border-gray-300 rounded-full px-10 py-2 focus:outline-none focus:ring-2 focus:ring-[#895BD7] w-full" />
         </div>
-
+  
+        <!-- User and Cart Icons -->
         <div class="flex space-x-4">
-          <img src="./assets/User.png" alt="Person Icon" class="h-6 w-6" />
-          <img src="./assets/Cart.png" alt="Shopping Cart Icon" class="h-6 w-6" />
+          <img src="./assets/User.png" alt="Person Icon" class="h-12 w-12" />
+          <img src="./assets/Cart.png" alt="Shopping Cart Icon" class="h-12 w-12" />
         </div>
       </div>
     </div>
   </header>
+  
 
   <!-- Hero Section -->
   <section class="p-8 bg-[#FFC0D7] h-[600px] w-full">
@@ -61,61 +65,61 @@
       <img src="assets/hero-5.png" alt="" class="img-5 w-full sm:w-auto mb-4 sm:mb-0 mx-2" />
     </div>
   </section>
+  
 
   <!-- 2nd section  -->
-  <section>
+  <section class="">
 
     <div class="sec-section">
 
     </div>
     <div class="bg-[#5255E5] sec-section2">
-      <p class=" text-[#fff] text-center sm:text-base">
-        Lorem Ipsum
-      </p>
+      <h1 class=" text-[#fff] text-center" data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500">
+      Welcome To Juice Babe
+      </h1>
 
-
-      <div>
-
-        <div class="relative w-full overflow-hidden">
-          <!-- Slider Container -->
-          <div id="slider" class="flex transition-transform duration-700">
-            <!-- Slide 1 -->
-            <div class="flex-none w-full">
-              <img src="assets/bottles.png" alt="Slide 1" class="">
-            </div>
-            <!-- Slide 2 -->
-            <div class="flex-none w-full">
-              <img src="assets/juice.png" alt="Slide 2" class="">
-            </div>
-            <!-- Slide 3 -->
-            <!-- <div class="flex-none w-full">
-        <img src="image3.jpg" alt="Slide 3" class="w-full h-auto">
-      </div> -->
+      <div class="relative overflow-hidden h-[400px]">
+        <!-- Slider Container -->
+        <div id="slider" class="flex transition-transform duration-700">
+          <!-- Slide 1 -->
+          <div class="flex-none flex items-center justify-center w-full">
+            <img src="assets/bottles.png" alt="Slide 1" class="h-[400px]">
           </div>
-
-          <!-- Navigation Buttons -->
-          <button id="prev"
-            class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full">
-            &#8592;
-          </button>
-          <button id="next"
-            class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full">
-            &#8594;
-          </button>
+          <!-- Slide 2 -->
+          <div class="flex-none flex items-center justify-center w-full">
+            <img src="assets/juice.png" alt="Slide 2" class="h-[400px]">
+          </div>
         </div>
-
+      
+        <!-- Navigation Buttons -->
+        <button id="prev"
+          class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full z-10">
+          &#8592;
+        </button>
+        <button id="next"
+          class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full z-10">
+          &#8594;
+        </button>
       </div>
+  
+      
 
 
       <!-- Text Section -->
-      <div class="text-center">
-        <p class="text-sm sm:text-base">
+    
+      <div class="text-center text-white py-4">
+        <p class="text-lg max-w-lg mx-auto leading-relaxed">
           Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is
           therefore always free from repetition, injected humour, or
-          non-characteristic words etc.
-          <u>Learn More...</u>
+          non-characteristic words, etc. 
+          therefore always free from repetition, injected humour, or
+          non-characteristic words, etc. 
         </p>
+        <u class="cursor-pointer  hover:text-gray-300">Learn More...</u>
       </div>
+      
     </div>
     </div>
 
@@ -131,71 +135,66 @@
 
     </div>
 
-    <div class="bg-[#F7EEDE]">
-
-
-
-      <div class="container ">
+    <div class="bg-[#F7EEDE] py-8">
+      <div class="mx-auto px-4">
         <div class="flex flex-col md:flex-row items-center justify-between">
-          <div class="w-full md:w-1/2 mb-6 md:mb-0">
-            <img src="assets/try-sea.png" alt="Sea Moss Product" class="w-full Sea-moss" />
+          <div class="w-full md:w-1/2 Sea-moss mb-6 md:mb-0">
+            <img src="assets/sea-mo.png" alt="Sea Moss Product" class="w-1/2" />
           </div>
-
-          <div class="w-full md:w-1/2">
+    
+          <div class="w-full md:w-1/2" data-aos="fade-up-left">
             <h1 class="text-3xl font-bold mb-4">Try Our Sea Moss!</h1>
-            <p class="text-lg mb-6">
-              Sourced from St. Lucia, this wildcrafted sea moss is superfood
-              magic! Packed with 92 minerals your body needs of the 102.
-              Supports with skin, gut, and brain function!
+            <p class="text-lg w-[80%] mb-6">
+              Sourced from St. Lucia, this wildcrafted sea moss is superfood magic! Packed with 92 minerals your body needs of the 102. Supports skin, gut, and brain function!
             </p>
-
-            <div class="flex space-x-4 mb-6">
-              <div class="items-center">
-                <img src="assets/Cleansing.png" alt="Skin" class="w-10 h-10" />
-                <p class="ml-2">Skin</p>
+    
+            <div class="flex space-x-6 mb-6 justify-center md:justify-start">
+              <div class="flex items-center">
+                <img src="assets/Cleansing.png" alt="Skin Benefits" class="w-10 h-10" />
+                <p class="ml-2 text-sm">Skin</p>
               </div>
-              <div class="items-center">
-                <img src="assets/ArtificialIntelligence.png" alt="Brain" class="w-10 h-10" />
-                <p class="ml-2">Brain</p>
+              <div class="flex items-center">
+                <img src="assets/ArtificialIntelligence.png" alt="Brain Benefits" class="w-10 h-10" />
+                <p class="ml-2 text-sm">Brain</p>
               </div>
-              <div class="items-center">
-                <img src="assets/Stomach.png" alt="Gut" class="w-10 h-10" />
-                <p class="ml-2">Gut</p>
+              <div class="flex items-center">
+                <img src="assets/Stomach.png" alt="Gut Benefits" class="w-10 h-10" />
+                <p class="ml-2 text-sm">Gut</p>
               </div>
             </div>
-
+    
             <a href="#"
-              class="border border-[#5255E5] text-[#5255E5] font-bold py-2 px-4 rounded-full hover:bg-white hover:text-[#5255E5] transition duration-300">
+              class="border border-[#5255E5] text-[#5255E5] font-bold py-2 px-6 rounded-full hover:bg-white hover:text-[#5255E5] transition duration-300">
               Know More...
             </a>
           </div>
         </div>
       </div>
-
+    
+      <!-- Second Section: Lorem Ipsum -->
       <div class="container mx-auto px-4 py-8">
-        <div class="flex flex-col md:flex-row items-center">
-          <div class="w-full md:w-1/2 mb-6 md:mb-0">
+        <div class="flex flex-col md:flex-row items-center justify-between">
+          <div class="w-full md:w-1/2 mb-6 md:mb-0" data-aos="fade-up-right">
             <h1 class="text-3xl font-bold mb-4">Lorem Ipsum</h1>
             <p class="text-lg mb-6">
-              Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised words which don't
-              look even slightly believable. If you are going to use a passage
-              of Lorem Ipsum, you need to be sure there isn't anything
-              embarrassing hidden in the middle of text.
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has been the industry's standard dummy text ever since the 1500s.
+              If you are going to use a passage of Lorem Ipsum, make sure there are no embarrassing hidden words in the text.
             </p>
-
+    
             <a href="#"
-              class="border border-[#5255E5] text-[#5255E5] font-bold py-2 px-4 rounded-full hover:bg-white hover:text-[#5255E5] transition duration-300">
+              class="border border-[#5255E5] text-[#5255E5] font-bold py-2 px-6 rounded-full hover:bg-white hover:text-[#5255E5] transition duration-300">
               Know More...
             </a>
           </div>
-
+    
           <div class="w-full md:w-1/2">
-            <img src="assets/img-food.png" alt="Product Image" class="w-full" />
+            <img src="assets/img-food.png" alt="Product Image" class="w-full rounded-lg" />
           </div>
         </div>
       </div>
     </div>
+    
+    
 
 
   </section>
@@ -204,136 +203,172 @@
 
   <section>
 
-    <div class="fourth-section">
-
-    </div>
+    <div class="fourth-section"></div>
 
     <div class="bg-[#FF5F5F]">
-
-
-
-
-      <div class=" mx-auto px-4 py-8">
+      <div class="mx-auto px-4 py-2">
         <div class="flex flex-col md:flex-row items-center">
-          <div class="w-full">
-            <div class="grid grid-cols-2 gap-4">
-              <img src="assets/mockup-img.png" alt="Juice Bottle 1" class="h-full" />
+          <!-- Image Section -->
+          <div class="w-full md:w-1/2">
+            <div class="grid grid-cols-1 gap-4 " data-aos="zoom-out-right">
+              <img src="assets/mockup-img.png" alt="Juice Bottle 1" class="w-full h-auto" />
             </div>
           </div>
+    
+          <!-- Text Section -->
+          <div class="w-full md:w-1/2 mt-8 md:mt-0">
+            <h2 class="text-3xl font-bold mb-6 text-center text-white">Pick Up Orders</h2>
+    
+          <!-- Map Section -->
+          <div  class="rounded-bl-full rounded-tr-full border-4 border-white overflow-hidden mb-6">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3354.554823190889!2d-96.79263852386315!3d32.77754508395827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e98e17bb9fbc1%3A0xbcf9f72cfca3498a!2sDallas%20Farmers%20Market!5e0!3m2!1sen!2sin!4v1733989640862!5m2!1sen!2sin" 
+              width="100%" 
+              height="400" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>
+          </div>
+          
 
-          <div class="w-full md:w-1/2">
-            <h2 class="text-3xl font-bold mb-6 text-center">Pick Up Orders</h2>
-            <div class="rounded-bl-full rounded-tr-full border-set">
-              <img src="" alt="Map" class="w-full" />
-            </div>
-            <div class="text-center mt-4">
-              <p>
-                Please contact nayebgroup@yahoo.com or DM us on Instagram with
-                your inquiry!
-              </p>
+            <!-- Contact Info -->
+            <div class="text-center text-white">
+              <p class="mb-2">Please contact <a href="mailto:nayebgroup@yahoo.com" class="underline">nayebgroup@yahoo.com</a> or DM us on Instagram with your inquiry!</p>
               <p>@juicebabedallas</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="forth-b">
+    
 
-    </div>
+
+    <div class="forth-b"></div>
   </section>
 
   <section>
     <div class="yellow-bg"></div>
     <div class="bg-[#FFB65F]">
 
-
-
-      <div class="container mx-auto px-4 py-8 ">
-        <div class="flex flex-col md:flex-row items-center justify-between">
-          <div class="w-full md:w-1/2 mb-6 md:mb-0">
-            <h2 class="text-2xl font-bold mb-4">Catering/Event Inquiry</h2>
-
+      <div class="container mx-auto px-4 py-8">
+        <div class="flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0">
+          <!-- Form Section -->
+          <div class="w-full  md:w-1/2" data-aos="fade-right">
+            <h2 class="text-3xl text-[#000] font-bold mb-6">Catering/Event Inquiry</h2>
             <form>
-              <div class="flex">
-                <input type="text" id="name" placeholder="Enter Your Name"
-                  class="border focus:outline-none focus:ring-2 focus:ring-[#895BD7] border-gray-300 p-2 w-full mb-4 rounded-full" />
-
-                <input type="tel" id="phone" placeholder="Enter Your Phone Number"
-                  class="border focus:outline-none focus:ring-2 focus:ring-[#895BD7] border-gray-300 p-2 w-full mb-4 rounded-full" />
+              <!-- Name and Phone Input -->
+              <div class="flex flex-col md:flex-row gap-4 mb-4">
+                <input 
+                  type="text" 
+                  id="name" 
+                  placeholder="Enter Your Name"
+                  class="border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#895BD7] p-3 w-full rounded-full" />
+                <input 
+                  type="tel" 
+                  id="phone" 
+                  placeholder="Enter Your Phone Number"
+                  class="border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#895BD7] p-3 w-full rounded-full" />
               </div>
-
-              <input type="email" id="email" placeholder="Enter Your Email"
-                class="border focus:outline-none focus:ring-2 focus:ring-[#895BD7] border-gray-300 p-2 w-full mb-4 rounded-full" />
-
-              <textarea id="comment" placeholder="Comments"
-                class="border focus:outline-none focus:ring-2 focus:ring-[#895BD7] border-gray-300 p-2 w-full mb-4 p-2 rounded-full"></textarea>
-
-              <button type="submit"
-                class="border border-[#5255E5] bg-[#5255E5] text-white font-bold py-2 px-4 rounded-full hover:bg-white hover:text-[#5255E5] transition duration-300">
+      
+              <!-- Email Input -->
+              <input 
+                type="email" 
+                id="email" 
+                placeholder="Enter Your Email"
+                class="border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#895BD7] p-3 w-full rounded-full mb-4" />
+      
+              <!-- Comments Section -->
+              <textarea 
+                id="comment" 
+                placeholder="Comments"
+                class="border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#895BD7] p-3 w-full rounded-lg mb-4 h-24 resize-none"></textarea>
+      
+              <!-- Submit Button -->
+              <button 
+                type="submit"
+                class="bg-[#5255E5] text-white font-bold py-2 px-6 rounded-full border border-[#5255E5] hover:bg-white hover:text-[#5255E5] transition duration-300">
                 Send
               </button>
             </form>
           </div>
-
-          <div class="w-full md:w-1/2 woman-img">
-            <blockquote class="border-l-4 border-gray-400 pl-4 mb-4">
-              <p>
-                "For me, if a woman believes in herself, she should not wait for
-                people to tap on her shoulder and say, 'you can do it.'" -
-                Anonymous
+      
+          <!-- Quote and Image Section -->
+          <div class="w-full md:w-1/2">
+            <!-- Quote -->
+            <blockquote class="border-l-4  border-gray-400 pl-4 text-gray-600 italic mb-6">
+              <p class="text-[#000]">
+                "For me, if a woman believes in herself, she should not wait for people to tap on her shoulder and say, 'you can do it.'" - Anonymous
               </p>
             </blockquote>
-            <img src="assets/JB-merch.webp" alt="Juice Babe T-Shirts" class="rounded-lg shadow-lg" />
+            
+            <!-- Image -->
+            <div data-aos="fade-left" class="relative  w-full max-w-md mx-auto border border-gray-300 rounded-lg overflow-hidden shadow-lg">
+              <img 
+                src="assets/JB-merch.webp" 
+                alt="Juice Babe T-Shirts" 
+                class="w-full h-auto">
+            </div>
           </div>
         </div>
       </div>
+      
+      
     </div>
     <div class="fivth-bg"></div>
   </section>
 
   <footer class=" text-white ">
     <div class="footer-bg ">
-
-
     </div>
-    <div class="bg-[#5255E5]">
-      <div class="px-8 py-12">
-        <div class="container-footer">
-          <h1 class="text-4xl font-bold text-center">Juice Babe</h1>
-
-          <div class="flex py-8 footer-input items-center mb-8">
-            <input type="email" placeholder="Enter Your Email"
-              class="border border-gray-500 p-2 flex-1 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full ml-2">
+    <div class="bg-[#5255E5] text-white" >
+      <div class="px-8 py-12 " data-aos="zoom-in-up">
+        <div class="max-w-3xl mx-auto text-center">
+          <!-- Footer Title -->
+          <h1 class="text-7xl font-bold mb-20">Juice Babe</h1>
+          
+          <!-- Subscription Form -->
+          <div class="flex flex-col mt-8 sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-6">
+            <input 
+              type="email" 
+              placeholder="Enter Your Email"
+              class="border border-gray-300 p-3 flex-1 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400 max-w-2xl" />
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full">
               Subscribe
             </button>
           </div>
-
-          <div class="flex justify-center space-x-4 mb-8">
-            <a href="#" class="text-2xl text-white hover:text-blue-500">
-              <i class="fab fa-facebook-square"></i>
+          
+          <!-- Social Links -->
+          <div class="flex justify-between mt-12 space-x-6 mb-6">
+            <a href="#" class="text-2xl">
+              <img src="assets/Facebook.png" alt="Facebook" class="w-16 h-16 hover:text-blue-400" />
             </a>
-            <a href="#" class="text-2xl text-white hover:text-pink-500">
-              <i class="fab fa-instagram"></i>
+            <a href="#" class="text-2xl">
+              <img src="assets/Instagram.png" alt="Instagram" class="w-16 h-16 hover:text-pink-400" />
             </a>
-            <a href="#" class="text-2xl text-white hover:text-blue-400">
-              <i class="fab fa-twitter"></i>
+            <a href="#" class="text-2xl">
+              <img src="assets/Twitter.png" alt="Twitter" class="w-16 h-16 hover:text-blue-300" />
             </a>
           </div>
-
-          <div class="flex justify-center space-x-4">
-            <a href="#" class="text-white hover:underline">FAQ</a>
-            <a href="#" class="text-white hover:underline">Terms of Service</a>
-            <a href="#" class="text-white hover:underline">Privacy Policy</a>
-            <a href="#" class="text-white hover:underline">Contact</a>
+          
+          <!-- Navigation Links -->
+          <div class="flex justify-between mt-12 space-x-6 text-[24px] mb-4">
+            <a href="#" class="hover:underline">FAQ</a>
+            <a href="#" class="hover:underline">Terms of Service</a>
+            <a href="#" class="hover:underline">Privacy Policy</a>
+            <a href="#" class="hover:underline">Contact</a>
           </div>
-
-          <p class="text-center mt-4 text-white">&copy; 2024 Juice Babe</p>
+    
+          <!-- Footer Text -->
+          <p class="text-center mt-8">&copy; 2024 Juice Babe</p>
         </div>
       </div>
-
     </div>
-
+    
+        </div>
+      </div>
+    </div>
+    
 
   </footer>
 
