@@ -16,50 +16,7 @@
 </head>
 
 <body>
-  <header class="bg-[#F7EEDE] text-black text-center p-2">
-    <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center">
-      <!-- Logo Section -->
-      <div class="flex justify-between w-full sm:w-auto items-center">
-        <img src="/assets/logo.png" alt="Juice Babe Logo" class="h-16 w-16 sm:h-24 sm:w-24" />
-  
-        <!-- Hamburger Icon -->
-        <button id="menu-toggle" class="sm:hidden focus:outline-none">
-          <svg class="h-8 w-8 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
-      </div>
-  
-      <!-- Navigation Links -->
-      <nav id="menu" class="hidden sm:flex flex-col sm:flex-row sm:space-x-8 space-y-4 sm:space-y-0 w-full sm:w-auto font-bold text-xl">
-        <ul class="flex flex-col sm:flex-row justify-center sm:justify-start space-x-0 sm:space-x-8">
-          <li><a href="#" class="hover:text-[#895BD7]">Home</a></li>
-          <li><a href="#" class="hover:text-[#895BD7]">About</a></li>
-          <li><a href="#" class="hover:text-[#895BD7]">Pick Up Order</a></li>
-          <li><a href="#" class="hover:text-[#895BD7]">Locations</a></li>
-          <li><a href="#" class="hover:text-[#895BD7]">Delivery</a></li>
-          <li><a href="#" class="hover:text-[#895BD7]">Contact</a></li>
-        </ul>
-      </nav>
-  
-      <!-- Search and Icons Section -->
-      <div id="menu"
-        class="flex  items-center menu-mobile px-24 w-full sm:w-auto justify-around sm:justify-end">
-        <div class="relative w-full sm:max-w-xs mb-4 sm:mb-0">
-          <img src="https://img.icons8.com/ios-filled/20/000000/search.png" alt="Search Icon"
-            class="absolute left-3 top-1/2 transform -translate-y-1/2" />
-          <input type="search" placeholder="Search..."
-            class="border border-gray-300 rounded-full px-10 py-2 focus:outline-none focus:ring-2 focus:ring-[#895BD7] w-full" />
-        </div>
-  
-        <div class="flex space-x-4">
-          <img src="./assets/User.png" alt="Person Icon" class="h-12 w-12" />
-          <img src="./assets/Cart.png" alt="Shopping Cart Icon" class="h-12 w-12" />
-        </div>
-      </div>
-    </div>
-  </header>
+
   
 
 
@@ -83,21 +40,21 @@
 
     </div>
     <div class="bg-[#5255E5] sec-section-content">
-<div class="p-10 sec-section2">
+<div class="sec-section2">
   <h1 class=" text-[#fff] text-center" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
     Welcome To Juice Babe
   </h1>
 
-  <div class="relative overflow-hidden h-[400px]">
+  <div class="relative overflow-hidden img-sec">
     <!-- Slider Container -->
     <div id="slider" class="flex transition-transform duration-700">
       <!-- Slide 1 -->
       <div class="flex-none flex items-center justify-center w-full">
-        <img src="assets/bottles.png" alt="Slide 1" class="h-[400px]">
+        <img src="assets/bottles.png" alt="Slide 1" class="img-sec ">
       </div>
       <!-- Slide 2 -->
       <div class="flex-none flex items-center justify-center w-full">
-        <img src="assets/juice.png" alt="Slide 2" class="h-[400px]">
+        <img src="assets/juice.png" alt="Slide 2" class=" img-sec ">
       </div>
     </div>
 
@@ -112,12 +69,13 @@
     </button>
   </div>
 
-  <div class="text-center text-white py-4">
-    <p class="text-lg max-w-lg mx-auto leading-relaxed">
+  <div class="text-center text-white py-4 px-4 sm:px-8">
+    <p class="text-lg sm:text-lg md:text-2xl max-w-lg mx-auto leading-relaxed">
       <span id="typing-effect" class="inline-block"></span>
     </p>
-    <u class="cursor-pointer hover:text-gray-300">Learn More...</u>
+    <u class="cursor-pointer hover:text-gray-300 text-sm sm:text-base md:text-lg">Learn More...</u>
   </div>
+  
 
 </div>
 
@@ -211,7 +169,7 @@
         <div class="flex flex-col-reverse md:flex-row items-center">
           <!-- Image Section -->
           <div class="w-full md:w-1/2">
-            <div class="grid grid-cols-1 gap-4" data-aos="zoom-out-right">
+            <div class="grid grid-cols-1 gap-4 img-bot" data-aos="zoom-out-right">
               <img src="assets/mockup-img.png" alt="Juice Bottle 1" class="w-full h-auto" />
             </div>
           </div>
@@ -221,7 +179,7 @@
             <h2 class="text-3xl font-bold mb-6 text-center text-white">Pick Up Orders</h2>
   
             <!-- Map Section -->
-            <div class="rounded-bl-full rounded-tr-full border-4 border-white overflow-hidden mb-6">
+            <div class="rounded-bl-full map-height rounded-tr-full border-4 border-white overflow-hidden mb-6">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3354.554823190889!2d-96.79263852386315!3d32.77754508395827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e98e17bb9fbc1%3A0xbcf9f72cfca3498a!2sDallas%20Farmers%20Market!5e0!3m2!1sen!2sin!4v1733989640862!5m2!1sen!2sin"
                 width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
@@ -241,19 +199,25 @@
     <div class="forth-b"></div>
   </section>
   
+  
+<!-- 
+  <div class="wave-container">
 
-  <!-- <div class="wave-container">
     <div class="wave"></div>
   </div> -->
 
   <section>
     <div class="yellow-bg"></div>
-    <div class="bg-[#FFB65F]">
+    <div class="bg-[#FFB65F]"
+    
+  
+    
+    >
   
       <div class="container btm mx-auto px-4 py-8">
         <div class="flex flex-col-reverse md:flex-row items-center justify-between space-y-8 md:space-y-0">
           <!-- Form Section -->
-          <div class="w-full md:w-1/2" data-aos="fade-right">
+          <div class="w-full md:w-1/2 btm2" data-aos="fade-right">
             <h2 class="text-3xl text-[#000] font-bold mb-6">Catering/Event Inquiry</h2>
             <form>
               <div class="flex flex-col md:flex-row gap-4 mb-4">
