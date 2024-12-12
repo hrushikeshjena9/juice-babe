@@ -18,7 +18,47 @@
 <body>
 
   
+  <header class="bg-[#F7EEDE] text-black text-center p-2">
+    <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center">
+      <!-- Logo Section -->
+      <div class="flex justify-between w-full sm:w-auto items-center">
+        <img src="/assets/logo.png" alt="Juice Babe Logo" class="h-16 w-16 sm:h-24 sm:w-24" />
+        
+        <!-- Mobile Toggle Button -->
+        <button id="menu-toggle" class="sm:hidden p-2 text-black">
+          <img src="https://img.icons8.com/ios-filled/20/000000/menu.png" alt="Menu Icon" class="h-8 w-8" />
+        </button>
+      </div>
+  
+      <!-- Navigation Links -->
+      <nav id="menu" class="sm:flex flex-col sm:flex-row sm:space-x-8 space-y-4 sm:space-y-0 w-full sm:w-auto font-bold text-xl hidden sm:block">
+        <ul class="flex flex-col sm:flex-row justify-center sm:justify-start space-x-0 sm:space-x-8">
+          <li><a href="#" class="hover:text-[#895BD7]">Home</a></li>
+          <li><a href="#" class="hover:text-[#895BD7]">About</a></li>
+          <li><a href="#" class="hover:text-[#895BD7]">Pick Up Order</a></li>
+          <li><a href="#" class="hover:text-[#895BD7]">Locations</a></li>
+          <li><a href="#" class="hover:text-[#895BD7]">Delivery</a></li>
+          <li><a href="#" class="hover:text-[#895BD7]">Contact</a></li>
+        </ul>
+      </nav>
+  
+      <!-- Search and Icons Section -->
+      <div class="flex items-center px-24 w-full sm:w-auto justify-around sm:justify-end">
+        <div class="relative w-full sm:max-w-xs mb-4 sm:mb-0">
+          <img src="https://img.icons8.com/ios-filled/20/000000/search.png" alt="Search Icon" class="absolute left-3 top-1/2 transform -translate-y-1/2" />
+          <input type="search" placeholder="Search..." class="border border-gray-300 rounded-full px-10 py-2 focus:outline-none focus:ring-2 focus:ring-[#895BD7] w-full" />
+        </div>
+  
+        <div class="flex space-x-4">
+          <img src="./assets/User.png" alt="Person Icon" class="h-12 w-12" />
+          <img src="./assets/Cart.png" alt="Shopping Cart Icon" class="h-12 w-12" />
+        </div>
+      </div>
+    </div>
+  </header>
+  
 
+  
 
   <!-- Hero Section -->
   <section class="p-4 sm:p-8 bg-[#FFC0D7] herosection w-full">
