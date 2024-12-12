@@ -24,32 +24,66 @@ body {
   transform: rotate(321.15deg);
 }
 
-
 .border-set {
   border: 2px blueviolet solid;
   height: 200px;
   width: 100%;
 }
-.footer-bg {
-  background: url("/assets/footerbg.png") no-repeat center center;
-  background-size: cover;
-}
-.container-footer{
-  padding-top: 300px;
-}
-.footer-input{
+.footer-input {
   width: 50%;
 }
-.Sea-moss{
+.Sea-moss {
   margin-left: -148px;
 }
-.sec-section{
-  background: url("/assets/Sec-section-img.png") no-repeat center center;
-  background-size: cover;
+.sec-section {
+  background: url("/assets/Vector-1.png") no-repeat center center;
+  background-size: 100%;
   margin-top: -230px;
+  height: 600px;
+  background-position: top;
 }
-.bg-map{
+.bg-map {
   background: url("/assets/bg-map.png") no-repeat center center;
   background-size: cover;
-  
+}
+.sec-section2 {
+  background-size: 100%;
+  margin-top: -380px;
+  height: 700px;
+  background-position: top;
+}
+.third-section {
+  background: url("/assets/bg.png") no-repeat center center;
+  background-size: 100%;
+  margin-top: -170px;
+  height: 350px;
+  background-position: top;
+}
+.fourth-section {
+  background: url("/assets/forth-bg.png") no-repeat center center;
+  background-size: 100%;
+  margin-top: -150px;
+  height: 300px;
+  background-position: top;
+}
+.forth-b {
+  background: url("/assets/forth-b.png") no-repeat center center;
+  background-size: 100%;
+  margin-top: -150px;
+  height: 400px;
+  background-position: top;
+}
+.yellow-bg {
+  background: url("/assets/yellow-bg.png") no-repeat center center;
+  background-size: 100%;
+  margin-top: -220px;
+  height: 200px;
+  background-position: top;
+}
+.footer-bg {
+  background: url("/assets/footer-bg.png") no-repeat center center;
+  background-size: 100%;
+  margin-top: -160px;
+  height: 300px;
+  background-position: top;
 }
