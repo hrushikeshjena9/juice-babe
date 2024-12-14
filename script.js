@@ -25,8 +25,6 @@ next.addEventListener('click', () => {
 document.addEventListener("DOMContentLoaded", function () {
   const text = `Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is
         therefore always free from repetition, injected humour, or
-        non-characteristic words, etc.
-        therefore always free from repetition, injected humour, or
         non-characteristic words, etc.`;
 
   let index = 0;
@@ -45,7 +43,18 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-document.getElementById("menu-toggle").addEventListener("click", function () {
-  var menu = document.getElementById("menu");
-  menu.classList.toggle("hidden");
-});
+const menuToggle = document.getElementById('menu-toggle');
+  const closeMenu = document.getElementById('close-menu');
+  const sliderMenu = document.getElementById('slider-menu');
+
+  // Toggle the slider menu
+  menuToggle.addEventListener('click', () => {
+    sliderMenu.classList.remove('-translate-x-full');
+    sliderMenu.classList.add('translate-x-0');
+  });
+
+  // Close the slider menu when the close button is clicked
+  closeMenu.addEventListener('click', () => {
+    sliderMenu.classList.remove('translate-x-0');
+    sliderMenu.classList.add('-translate-x-full');
+  });
