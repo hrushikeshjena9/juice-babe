@@ -23,10 +23,7 @@
       <div class="flex justify-between w-full sm:w-auto items-center">
       
         <img src="/assets/logo.png" alt="Juice Babe Logo" class="h-12 w-12 sm:h-20 sm:w-20" />
-        <div class="flex space-x-12">
-          <img src="./assets/User.png" alt="Person Icon" class="h-12 w-12" />
-          <img src="./assets/Cart.png" alt="Shopping Cart Icon" class="h-12 w-12" />
-        </div>
+       
         <!-- Hamburger Menu Icon -->
         <button id="menu-toggle" class="sm:hidden text-black focus:outline-none">
           <img src="https://img.icons8.com/ios-filled/25/000000/menu.png" alt="Menu Icon" />
@@ -44,6 +41,16 @@
           <li><a href="#" class="hover:text-[#895BD7]">Contact</a></li>
         </ul>
       </nav>
+      <div class="relative w-[20%] mt-2 hidden sm:block">
+        <img src="https://img.icons8.com/ios-filled/20/000000/search.png" alt="Search Icon"
+          class="absolute left-3 top-1/2 transform -translate-y-1/2" />
+        <input type="search" placeholder="Search..."
+          class="border border-gray-300 rounded-full px-10 py-2 focus:outline-none focus:ring-2 focus:ring-[#895BD7] w-full" />
+      </div>
+      <div class="flex space-x-12 ">
+        <img src="./assets/User.png" alt="Person Icon" class="h-12 w-12 hidden sm:block" />
+        <img src="./assets/Cart.png" alt="Shopping Cart Icon" class="h-12 w-12 hidden sm:block" />
+      </div>
     </div>
   
     <!-- Mobile Navigation Modal -->
