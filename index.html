@@ -17,54 +17,51 @@
 </head>
 
 <body>
-
   <header class="bg-[#F7EEDE] text-black text-center p-2">
     <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center">
       <!-- Logo Section -->
       <div class="flex justify-between w-full sm:w-auto items-center">
-        <img src="/assets/logo.png" alt="Juice Babe Logo" class="h-16 w-16 sm:h-24 sm:w-24" />
+        <img src="/assets/logo.png" alt="Juice Babe Logo" class="h-12 w-12 sm:h-20 sm:w-20" />
         <!-- Hamburger Menu Icon -->
         <button id="menu-toggle" class="sm:hidden text-black focus:outline-none">
           <img src="https://img.icons8.com/ios-filled/25/000000/menu.png" alt="Menu Icon" />
         </button>
       </div>
-
-      <!-- Navigation Links with Search Bar -->
-      <nav id="menu"
-        class="sm:flex flex-col sm:flex-row sm:space-x-8 space-y-4 sm:space-y-0 w-full sm:w-auto font-bold text-xl hidden sm:block">
-        <ul class="flex flex-col sm:flex-row justify-center sm:justify-start space-x-0 sm:space-x-8">
+  
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden sm:flex flex-row space-x-6 font-bold text-lg">
+        <ul class="flex space-x-6">
           <li><a href="#" class="hover:text-[#895BD7]">Home</a></li>
           <li><a href="#" class="hover:text-[#895BD7]">About</a></li>
-          <li><a href="#" class="hover:text-[#895BD7]">Pick Up Order</a></li>
+          <li><a href="#" class="hover:text-[#895BD7]">Order</a></li>
           <li><a href="#" class="hover:text-[#895BD7]">Locations</a></li>
-          <li><a href="#" class="hover:text-[#895BD7]">Delivery</a></li>
           <li><a href="#" class="hover:text-[#895BD7]">Contact</a></li>
         </ul>
-
-        <!-- Search Bar for Mobile -->
-        <div class="relative w-full sm:hidden">
-          <img src="https://img.icons8.com/ios-filled/20/000000/search.png" alt="Search Icon"
-            class="absolute left-3 top-1/2 transform -translate-y-1/2" />
-          <input type="search" placeholder="Search..."
-            class="border border-gray-300 rounded-full px-10 py-2 focus:outline-none focus:ring-2 focus:ring-[#895BD7] w-full" />
-        </div>
       </nav>
-
-      <!-- Search and Icons Section for Larger Screens -->
-      <div class="hidden sm:flex items-center px-24 w-full sm:w-auto justify-around sm:justify-end">
-        <div class="relative w-full sm:max-w-xs mb-4 sm:mb-0">
-          <img src="https://img.icons8.com/ios-filled/20/000000/search.png" alt="Search Icon"
-            class="absolute left-3 top-1/2 transform -translate-y-1/2" />
-          <input type="search" placeholder="Search..."
-            class="border border-gray-300 rounded-full px-10 py-2 focus:outline-none focus:ring-2 focus:ring-[#895BD7] w-full" />
-        </div>
-        <div class="flex space-x-4">
-          <img src="./assets/User.png" alt="Person Icon" class="h-12 w-12" />
-          <img src="./assets/Cart.png" alt="Shopping Cart Icon" class="h-12 w-12" />
-        </div>
+    </div>
+  
+    <!-- Mobile Navigation Modal -->
+    <div id="menu-modal" class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-50 hidden">
+      <div class="bg-white w-4/5 max-w-xs h-[270px] p-4 shadow-lg relative">
+        <button id="menu-close" 
+          class="absolute top-4 right-4 text-black text-4xl focus:outline-none">
+          &times;
+        </button>
+        <ul class="mt-8 space-y-3 font-semibold text-base">
+          <li><a href="#" class="hover:text-[#895BD7]">Home</a></li>
+          <li><a href="#" class="hover:text-[#895BD7]">About</a></li>
+          <li><a href="#" class="hover:text-[#895BD7]">Order</a></li>
+          <li><a href="#" class="hover:text-[#895BD7]">Locations</a></li>
+          <li><a href="#" class="hover:text-[#895BD7]">Contact</a></li>
+        </ul>
       </div>
     </div>
+    
+    
   </header>
+  
+  
+  
 
   <!-- Hero Section -->
   <section class="  w-full">

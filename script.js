@@ -43,18 +43,22 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// Toggle the mobile menu modal
 const menuToggle = document.getElementById('menu-toggle');
-  const closeMenu = document.getElementById('close-menu');
-  const sliderMenu = document.getElementById('slider-menu');
+const menuModal = document.getElementById('menu-modal');
+const menuClose = document.getElementById('menu-close');
 
-  // Toggle the slider menu
-  menuToggle.addEventListener('click', () => {
-    sliderMenu.classList.remove('-translate-x-full');
-    sliderMenu.classList.add('translate-x-0');
-  });
+menuToggle.addEventListener('click', () => {
+  menuModal.classList.remove('hidden');
+});
 
-  // Close the slider menu when the close button is clicked
-  closeMenu.addEventListener('click', () => {
-    sliderMenu.classList.remove('translate-x-0');
-    sliderMenu.classList.add('-translate-x-full');
-  });
+menuClose.addEventListener('click', () => {
+  menuModal.classList.add('hidden');
+});
+
+// Optional: Close modal when clicking outside
+menuModal.addEventListener('click', (event) => {
+  if (event.target === menuModal) {
+    menuModal.classList.add('hidden');
+  }
+});
