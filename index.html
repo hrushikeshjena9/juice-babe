@@ -21,7 +21,12 @@
     <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center">
       <!-- Logo Section -->
       <div class="flex justify-between w-full sm:w-auto items-center">
+      
         <img src="/assets/logo.png" alt="Juice Babe Logo" class="h-12 w-12 sm:h-20 sm:w-20" />
+        <div class="flex space-x-12">
+          <img src="./assets/User.png" alt="Person Icon" class="h-12 w-12" />
+          <img src="./assets/Cart.png" alt="Shopping Cart Icon" class="h-12 w-12" />
+        </div>
         <!-- Hamburger Menu Icon -->
         <button id="menu-toggle" class="sm:hidden text-black focus:outline-none">
           <img src="https://img.icons8.com/ios-filled/25/000000/menu.png" alt="Menu Icon" />
@@ -33,7 +38,8 @@
         <ul class="flex space-x-6">
           <li><a href="#" class="hover:text-[#895BD7]">Home</a></li>
           <li><a href="#" class="hover:text-[#895BD7]">About</a></li>
-          <li><a href="#" class="hover:text-[#895BD7]">Order</a></li>
+          <li><a href="#" class="hover:text-[#895BD7]">PickUp Order</a></li>
+          <li><a href="#" class="hover:text-[#895BD7]">Delivery</a></li>
           <li><a href="#" class="hover:text-[#895BD7]">Locations</a></li>
           <li><a href="#" class="hover:text-[#895BD7]">Contact</a></li>
         </ul>
@@ -42,7 +48,7 @@
   
     <!-- Mobile Navigation Modal -->
     <div id="menu-modal" class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-50 hidden">
-      <div class="bg-white w-4/5 max-w-xs h-[270px] p-4 shadow-lg relative">
+      <div class="bg-[#F7EEDE] w-4/5 max-w-xs h-[370px] p-4 shadow-lg relative">
         <button id="menu-close" 
           class="absolute top-4 right-4 text-black text-4xl focus:outline-none">
           &times;
@@ -50,11 +56,20 @@
         <ul class="mt-8 space-y-3 font-semibold text-base">
           <li><a href="#" class="hover:text-[#895BD7]">Home</a></li>
           <li><a href="#" class="hover:text-[#895BD7]">About</a></li>
-          <li><a href="#" class="hover:text-[#895BD7]">Order</a></li>
+          <li><a href="#" class="hover:text-[#895BD7]">PickUp Order</a></li>
+          <li><a href="#" class="hover:text-[#895BD7]">Delivery</a></li>
           <li><a href="#" class="hover:text-[#895BD7]">Locations</a></li>
           <li><a href="#" class="hover:text-[#895BD7]">Contact</a></li>
         </ul>
+        <div class="relative w-full mt-2 sm:hidden">
+          <img src="https://img.icons8.com/ios-filled/20/000000/search.png" alt="Search Icon"
+            class="absolute left-3 top-1/2 transform -translate-y-1/2" />
+          <input type="search" placeholder="Search..."
+            class="border border-gray-300 rounded-full px-10 py-2 focus:outline-none focus:ring-2 focus:ring-[#895BD7] w-full" />
+        </div>
+        
       </div>
+      
     </div>
     
     

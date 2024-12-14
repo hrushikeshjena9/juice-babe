@@ -142,7 +142,8 @@ body {
     height: 7rem;
     width: 37px;
 }
-  
+.third-section {
+  height: 163vh;}
   .menu-mobile {
     position: absolute;
     top: 30;
@@ -155,13 +156,13 @@ body {
     height: 525px;
   }
   .fourth-sec {
-    height: 102vh;}
+    height: 87vh;}
   .top-margin{
     margin-top: -80px;
   }
   .cont-bg {
     margin-top: -3px;
-    height: 146vh;
+    height: 130vh;
 }.margin-small{
   margin-top: -3px;
 }
@@ -188,3 +189,22 @@ body {
     );
   }
 }
+
+
+/* @media (max-width: 480px) {
+  .sec-section2 {
+    height: auto;
+  }
+  .top-margin {
+    margin-top: -20vh; 
+  }
+  .third-section {
+    height: auto; 
+  }
+  .cont-bg {
+    height: auto;
+  }
+  .fourth-sec {
+    height: auto;
+  }
+} */
