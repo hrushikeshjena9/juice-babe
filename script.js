@@ -62,3 +62,4 @@ menuModal.addEventListener('click', (event) => {
     menuModal.classList.add('hidden');
   }
 });
+ 
